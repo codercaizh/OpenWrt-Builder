@@ -18,4 +18,4 @@
 #git clone https://github.com/MrH723/openwrt-packages.git package/openwrt-packages
 sed -i '$a src-git MrH723 https://github.com/MrH723/openwrt-packages' feeds.conf.default
 git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
-git clone https://github.com/pymumu/luci-app-smartdns package/luci-app-pushbot
+git clone https://github.com/codercaizh/luci-app-smartdns package/luci-app-smartdns
