@@ -20,3 +20,6 @@ sed -i '$a src-git MrH723 https://github.com/MrH723/openwrt-packages' feeds.conf
 git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
 git clone https://github.com/codercaizh/luci-app-smartdns package/luci-app-smartdns
 git clone https://github.com/kiddin9/luci-app-eqos package/luci-app-eqos
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+git clone https://github.com/xiaozhuai/luci-app-filebrowser package/luci-app-filebrowser
