@@ -63,7 +63,7 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         # 替换超频文件
-        # curl -o /workdir/openwrt/target/linux/ramips/patches-5.4/102-mt7621-fix-cpu-clk-add-clkdev.patch https://raw.githubusercontent.com/codercaizh/lede/master/target/linux/ramips/patches-5.4/102-mt7621-fix-cpu-clk-add-clkdev.patch
+        curl -o /workdir/openwrt/target/linux/ramips/patches-5.4/102-mt7621-fix-cpu-clk-add-clkdev.patch https://raw.githubusercontent.com/codercaizh/Actions-OpenWrt-1/main/cpu1100
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
     - name: Load custom feeds
       run: |
