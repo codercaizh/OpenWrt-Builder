@@ -22,3 +22,4 @@ git clone https://github.com/codercaizh/luci-app-smartdns package/luci-app-smart
 git clone https://github.com/MapesxGM/luci-app-eqos package/luci-app-eqos
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+git clone https://github.com/nickilchen/luci-app-socat package/luci-app-socat
