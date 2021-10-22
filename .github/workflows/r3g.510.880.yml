@@ -60,9 +60,14 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        git clone --depth=1 $REPO_URL -b $REPO_BRANCH openwrt
         curl -o /workdir/openwrt/target/linux/ramips/Makefile https://raw.githubusercontent.com/codercaizh/Actions-OpenWrt-1/main/Makefile510
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+    - name: Cache
+      uses: klever1988/cachewrtbuild@main
+      with:
+        ccache: 'true'
+        prefix: ${{ github.workspace }}/openwrt
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
